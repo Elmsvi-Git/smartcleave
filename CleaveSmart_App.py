@@ -328,7 +328,7 @@ with tab4:
     
     with col2:
         
-        st.image("Logos.png",width='content')
+        st.image("logos.png",width='content')
 
     
       
