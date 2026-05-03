@@ -117,7 +117,7 @@ with tab1:
 
     with col_logo:
         
-        st.image('app_logo.png', use_container_width=True) 
+        st.image('app_logo.png', width='content') 
 
     with col_text:
         st.title("Welcome to CleaveSmart Web App!")
@@ -166,7 +166,7 @@ with tab2:
 
     with col_logo:
         
-        st.image('app_logo.png', use_container_width=True) 
+        st.image('app_logo.png', width='content') 
 
     with col_text:
         st.title("Welcome to CleaveSmart Pipeline:")
@@ -257,7 +257,8 @@ with tab2:
                     c3.metric("Top Activity Score", f"{top['Activity_Probability']:.2%}")
                     
 
-                    st.dataframe(df_results.style.background_gradient(subset=['Activity_Probability'], cmap='RdYlGn'), use_container_width=True)
+                    st.dataframe(df_results.style.background_gradient(subset=['Activity_Probability'], cmap='RdYlGn'),
+                                  width='content')
                 else:
                     st.warning("No valid 10-23 cleavage sites (AU/GU) were found.")
     st.markdown("<br><hr>", unsafe_allow_html=True)
@@ -327,7 +328,7 @@ with tab4:
     
     with col2:
         
-        st.image("Logos.png",use_container_width=True)
+        st.image("Logos.png",width='content')
 
     
       
